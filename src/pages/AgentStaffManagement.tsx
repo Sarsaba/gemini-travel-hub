@@ -1,5 +1,6 @@
 import { useState } from "react";
 import AppLayout from "@/components/AppLayout";
+import AIRecommendPanel from "@/components/AIRecommendPanel";
 import { Star, Clock, MapPin, UserPlus, Search, Filter } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -75,6 +76,8 @@ const AgentStaffManagement = () => {
             </DialogContent>
           </Dialog>
         </div>
+
+        <AIRecommendPanel type="agent" />
 
         <div className="flex gap-3">
           <div className="relative flex-1">
