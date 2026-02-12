@@ -1,5 +1,6 @@
 import { useState } from "react";
 import AppLayout from "@/components/AppLayout";
+import AIRecommendPanel from "@/components/AIRecommendPanel";
 import { Building2, Car, FileText, Plus, Search, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -50,6 +51,8 @@ const SupplierPartnerManagement = () => {
           <h1 className="text-2xl font-bold text-foreground">Vendor Portal</h1>
           <p className="text-sm text-muted-foreground mt-1">Manage suppliers and business partners</p>
         </div>
+
+        <AIRecommendPanel type="supplier" />
 
         <Tabs defaultValue="suppliers" className="space-y-4">
           <TabsList className="bg-secondary border border-border">
