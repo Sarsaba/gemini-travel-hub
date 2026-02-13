@@ -10,6 +10,7 @@ import VehicleAvailability from "./pages/VehicleAvailability";
 import VisaAssistance from "./pages/VisaAssistance";
 import MarketingPromotion from "./pages/MarketingPromotion";
 import TourResources from "./pages/TourResources";
+import UserManual from "./pages/UserManual";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/visa" element={<VisaAssistance />} />
           <Route path="/marketing" element={<MarketingPromotion />} />
           <Route path="/tour-resources" element={<TourResources />} />
+          <Route path="/user-manual" element={<UserManual />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

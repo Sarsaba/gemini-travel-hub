@@ -11,6 +11,7 @@ import {
   ChevronLeft,
   ChevronRight,
   Globe,
+  BookOpen,
 } from "lucide-react";
 
 const navItems = [
@@ -21,6 +22,7 @@ const navItems = [
   { path: "/visa", label: "Visa Assistance", icon: FileCheck },
   { path: "/marketing", label: "Marketing & Promos", icon: Megaphone },
   { path: "/tour-resources", label: "Tour Resources", icon: CalendarCheck },
+  { path: "/user-manual", label: "User Manual", icon: BookOpen },
 ];
 
 const AppSidebar = () => {
